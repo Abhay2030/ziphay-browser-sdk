@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Ziphay SDK Demo</title>
+</head>
+
+<body>
+
+    <h1>
+        Ziphay Browser SDK
+    </h1>
+
+
+    <input id="upload" type="file" />
+
+
+    <script type="module">
+
+        import {
+            compressImage,
+            getFileInfo
+        }
+            from "@ziphay/browser-sdk";
+
+
+        const input =
+            document.getElementById(
+                "upload"
+            );
+
+
+        input.addEventListener(
+            "change",
+            async e => {
+
+
+                const file =
+                    e.target.files[0];
+
+
+                const compressed =
+                    await compressImage(
+                        file,
+                        {
+                            quality: 0.7,
+                            format: "image/webp"
+                        }
+                    );
+
+
+                console.log(
+                    getFileInfo(
+                        compressed
+                    )
+                );
+
+            }
+        );
+
+    </script>
+
+</body>
+
+</html>
