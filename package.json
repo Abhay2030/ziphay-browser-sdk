@@ -1,0 +1,35 @@
+{
+  "name": "@nameisabhay2030/ziphay-browser-sdk",
+  "version": "0.1.1-beta",
+  "description": "Official browser SDK for Ziphay AI. A lightweight JavaScript toolkit for image compression, optimization, conversion, and file utilities with no API or backend required.",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "files": [
+    "src"
+  ],
+  "keywords": [
+    "ziphay",
+    "ziphay-ai",
+    "image-compression",
+    "image-optimization",
+    "file-compression",
+    "file-converter",
+    "browser",
+    "javascript",
+    "sdk",
+    "web-tools"
+  ],
+  "author": "Abhay <abhaydonde2007@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abhay2030/ziphay-browser-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Abhay2030/ziphay-browser-sdk/issues"
+  },
+  "homepage": "https://ziphay-smart-compression.vercel.app"
+}
